@@ -519,7 +519,7 @@ blockquote {
 .card-footer {
     width                : 100%;
     display              : grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .card-footer .info {
@@ -565,8 +565,31 @@ blockquote {
 .card:nth-child(3n) .date {
     color: #03b43e;
 }
-
-
+/*pagination*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pagination .btn {
+    margin : 0.5em 0.3em;
+    padding: 0.5em;
+    background-color: #f00a69;
+    color: #fff;
+    border-radius: 20%;
+    border : 1px solid #fff;
+    font-size: 120%;
+}
+/*arguments*/
+#pourquoi {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.argument-wrapper {
+    margin: 0 auto;
+    max-width: 70%;
+    text-align: left;
+}
 /*commun*/
 .center {
     text-align: center;
@@ -608,14 +631,16 @@ margin-left: 3em;
 
   /*single*/
   .hero .responsive {
-      max-height: 80vh;
+      max-height: 70vh;
   }
 
   #single {
     padding: 50px 50px 50px 50px;
     text-align: center;
   }
-
+ #info-boutique {
+     margin-bottom: 5em;
+ }
   *{
     margin: 0;
     padding:0;
@@ -695,3 +720,22 @@ margin-left: 3em;
   .horaire h3 {
       margin-top: 0;
   }
+
+  /*footer */
+footer {
+    background-color: #ff0c71;
+    color: #fff;
+    
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.link-wrapper {
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.quick-links, .social-links, .partenaire {
+    margin : 1em;
+}
